@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="shafi.sbf.com.doctorsappointment">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EPharma.MyPharmacyOrderDetailsActivity"></activity>
+        <activity android:name=".EPharma.MyPharmacyOrderActivity" />
+        <activity android:name=".Foreign.ForeignHospital" />
+        <activity android:name=".Foreign.ForeignHospitalList" />
+        <activity android:name=".Foreign.MyAppointment" />
+        <activity android:name=".Foreign.ForegnDoctor" />
+        <activity android:name=".Nurse.MyNurceService" />
+        <activity android:name=".Nurse.ConfirmNurse" />
+        <activity android:name=".Nurse.NursePackage" />
+        <activity android:name=".Nurse.VendorActivity" />
+        <activity android:name=".physiotherapist.ConfirmPhysioActivity" />
+        <activity android:name=".physiotherapist.GetPhysiotherapistActivity" />
+        <activity android:name=".physiotherapist.MyPhysiotherapistTakenServicesActivity" />
+        <activity android:name=".physiotherapist.PhysiotherapistActivity" />
+        <activity android:name=".hospital.BookingListActivity" />
+        <activity android:name=".appointment.AppointmentListActivity" />
+        <activity android:name=".hospital.HospitalDoctorProfileActivity" />
+        <activity android:name=".appointment.DoctorChamberListActivity" />
+        <activity android:name=".REgistration.LogIn" />
+        <activity android:name=".DoctorApp.AddSedule" />
+        <activity android:name=".DoctorApp.DoctorProfile" />
+        <activity android:name=".REgistration.Register" />
+        <activity android:name=".REgistration.SignupOrLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.AccessoricsSingle" />
+        <activity android:name=".Activity.AccessoricsList" />
+        <activity android:name=".EPharma.EpharmaOrderList" />
+        <activity android:name=".EPharma.EVendor" />
+        <activity android:name=".Activity.EpharmaPaymentMethod" />
+        <activity android:name=".Activity.EPharmaSingleMedicine" />
+        <activity android:name=".Activity.EpharmaList" />
+        <activity android:name=".Activity.EmergencyDoctorTalk" />
+        <activity android:name=".Activity.EmergencyDoctorChat" />
+        <activity android:name=".Activity.EmergencyDoctor" />
+        <activity android:name=".Activity.PetFeedDetails" />
+        <activity android:name=".Activity.PetFeedList" />
+        <activity android:name=".Activity.PetDoctor" />
+        <activity android:name=".Activity.PetParchesDetails" />
+        <activity android:name=".Activity.PetParchesList" />
+        <activity android:name=".Activity.PetHome" />
+        <activity android:name=".Activity.HealthTipsDetails" />
+        <activity android:name=".Activity.HealthTipsHome" />
+        <activity android:name=".Activity.HealthReportView" />
+        <activity android:name=".Activity.HealthReportUpload" />
+        <activity android:name=".Activity.AmbulanceSelect" />
+        <activity android:name=".Activity.Ambulance" />
+        <activity android:name=".Activity.HealthReportActivity" />
+        <activity android:name=".Activity.BloodBank" />
+        <activity android:name=".Activity.Hospital" />
+        <activity android:name=".Activity.HospitalList" />
+        <activity android:name=".Activity.Doctor" />
+        <activity android:name=".Activity.DoctorAppointmentList">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".Activity.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".NotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/medilink" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorSubMain" />
+    </application>
+
+</manifest>

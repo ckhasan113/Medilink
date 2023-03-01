@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFF"
+    tools:context=".REgistration.SignupOrLogin">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome\nTo"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/amiko"
+        android:textColor="@color/colorBlack"/>
+
+    <ImageView
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="100pt"
+        android:src="@drawable/medilink"/>
+
+    <!--<ImageView-->
+        <!--android:src="@drawable/doctor_round"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:textSize="24sp"-->
+        <!--android:text="Get Your Account"-->
+        <!--android:gravity="center"-->
+        <!--android:fontFamily="@font/amiko"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="@color/colorMain"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingLeft="20dp"-->
+        <!--android:paddingRight="20dp" >-->
+
+
+        <!--&lt;!&ndash; Login Button &ndash;&gt;-->
+
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/login"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--app:cardBackgroundColor="@color/colorMain"-->
+            <!--app:cardCornerRadius="10dp"-->
+            <!--app:contentPadding="8dp"-->
+
+            <!--&gt;-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_margin="2dp"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--&gt;-->
+
+                <!--<ImageView-->
+                    <!--android:layout_gravity="left"-->
+                    <!--android:src="@drawable/login_24dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent" />-->
+                <!--<View-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="1dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="#fff"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:fontFamily="@font/rubik_bold"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="LogIn"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:typeface="monospace" />-->
+
+            <!--</LinearLayout>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--&lt;!&ndash; register button &ndash;&gt;-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/register"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--app:cardBackgroundColor="@color/colorMain"-->
+            <!--app:cardCornerRadius="10dp"-->
+            <!--app:contentPadding="8dp"-->
+
+            <!--&gt;-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_margin="2dp"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--&gt;-->
+
+                <!--<ImageView-->
+                    <!--android:layout_gravity="left"-->
+                    <!--android:src="@drawable/register"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent" />-->
+                <!--<View-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_width="1dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="#fff"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:fontFamily="@font/rubik_bold"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Register"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:typeface="monospace" />-->
+
+            <!--</LinearLayout>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+
+    <!--</LinearLayout>-->
+
+
+
+</LinearLayout>

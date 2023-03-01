@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Ambulance"
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMain">
+
+        <EditText
+            android:id="@+id/from"
+            android:textSize="18sp"
+            android:hint="Pick up Location"
+            android:paddingLeft="16dp"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="24pt"
+            android:background="@drawable/ambulance_search"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:text="TO"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="24dp"/>
+
+
+
+        <EditText
+            android:id="@+id/to"
+            android:paddingLeft="16dp"
+            android:textSize="18sp"
+            android:hint="Destination Name or Hospital"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="24pt"
+            android:background="@drawable/ambulance_search"/>
+
+
+        <Button
+            android:layout_marginTop="40pt"
+            android:onClick="select_ride"
+            android:textAllCaps="false"
+            android:background="@drawable/ambulance_search"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="24sp"
+            android:textColor="@color/colorMain"
+            android:text="Select Your Ride"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

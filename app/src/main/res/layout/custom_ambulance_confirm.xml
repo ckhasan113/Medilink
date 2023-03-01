@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="475dp"
+    android:background="@drawable/custom_appoi"
+    android:layout_gravity="center">
+    <TextView
+        android:background="@drawable/circel_background"
+        android:id="@+id/txtclose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textColor="#000"
+        android:text="X"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Ambulance Booking"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pic Up Point"
+                    android:textSize="18sp"
+                    android:textColor="#FFF"/>
+
+                <TextView
+                    android:id="@+id/TVfrom"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Panthapath,Dhaka House No. 18"
+                    android:textSize="16sp"
+                    android:textColor="#FFF"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Destination"
+                    android:textSize="18sp"
+                    android:textColor="#FFF"/>
+
+                <TextView
+                    android:id="@+id/TVto"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="square hospital, Panthapath Dhaka"
+                    android:textSize="16sp"
+                    android:textColor="#FFF"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginRight="1dp"
+            android:gravity="center"
+            android:background="@drawable/custom_appoi"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginLeft="4dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fear"
+                android:textSize="18sp"
+                android:textColor="#FFF"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="220 Tk."
+                android:textSize="18sp"
+                android:textColor="#FFF"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:textColor="@color/colorMain"
+        android:id="@+id/confirmBooking"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="40pt"
+        android:layout_gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:text="Confirm Ambulance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_box"/>
+
+
+</LinearLayout>

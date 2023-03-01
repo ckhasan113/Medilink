@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Medilink</string>
+
+    <string name="organic_food">Organic foods may have higher nutritional value than conventional food, according to some research. The reason: In the absence of pesticides and fertilizers, plants boost their production of the phytochemicals (vitamins and antioxidants) that strengthen their resistance to bugs and weeds.The benefits of organic food.Organic foods often have more beneficial nutrients, such as antioxidants, than their conventionally-grown counterparts and people with allergies to foods.</string>
+    <string name="gender">Gender <b>Male</b></string>
+    <string name="required_field">This field is required</string>
+    <string-array name="speciality">
+        <item>Department</item>
+        <item>Anesthetics</item>
+        <item>Breast Screening</item>
+        <item>Haematology</item>
+        <item>Cardiology</item>
+        <item>Skin care</item>
+    </string-array>
+    <string-array name="number">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="country">
+        <item>India</item>
+        <item>Singapore</item>
+        <item>Malaysia</item>
+        <item>England</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Category</item>
+        <item>Fruit</item>
+        <item>Food</item>
+        <item>Fish</item>
+    </string-array>
+
+    <string-array name="degree">
+        <item>Degree</item>
+        <item>M.B.B.S</item>
+        <item>F.C.P.S</item>
+        <item>AFR.C.P.S</item>
+    </string-array>
+
+</resources>

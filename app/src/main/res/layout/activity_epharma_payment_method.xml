@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EPharma.EpharmaPaymentMethod">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="@drawable/background_view_page"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:src="@drawable/button_back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="Payment Method"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Payment Via?"
+                android:textSize="24sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_marginTop="16dp"
+                android:id="@+id/maptype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:orientation="vertical" >
+                <RadioButton
+                    android:textSize="18sp"
+                    android:text="     Visa Card"
+                    android:id="@+id/visa_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/visa" />
+
+                <RadioButton
+                    android:layout_marginTop="8dp"
+                    android:text="     Bikash"
+                    android:textSize="18sp"
+                    android:id="@+id/bikash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/bkash" />
+                <RadioButton
+                    android:layout_marginTop="8dp"
+                    android:textSize="18sp"
+                    android:text="     Cash on Delivary"
+                    android:id="@+id/Cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/payment_method" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="Card Number"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/box"
+                android:layout_marginTop="4dp"
+                android:inputType="text"
+                android:lines="1"
+                android:minLines="1"
+                android:gravity="top|left"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                />
+            <TextView
+
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pin"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/box"
+                android:layout_marginTop="4dp"
+                android:inputType="text"
+                android:lines="1"
+                android:minLines="1"
+                android:gravity="top|left"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                />
+            <TextView
+
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Holder Name"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/box"
+                android:layout_marginTop="4dp"
+                android:inputType="text"
+                android:lines="1"
+                android:minLines="1"
+                android:gravity="top|left"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                />
+            <TextView
+
+                android:layout_marginTop="24dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Address"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/box"
+                android:layout_marginTop="4dp"
+                android:inputType="text"
+                android:lines="1"
+                android:minLines="1"
+                android:gravity="top|left"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                />
+            <TextView
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Number"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/box"
+                android:layout_marginTop="4dp"
+                android:inputType="number"
+                android:lines="1"
+                android:minLines="1"
+                android:gravity="top|left"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                />
+
+            <Button
+                android:layout_marginBottom="64dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorMain"
+                android:text="Order Confirm"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:background="@drawable/search_box"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

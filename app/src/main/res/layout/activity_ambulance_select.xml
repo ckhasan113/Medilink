@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AmbulanceSelect">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="@drawable/background_view_page"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:src="@drawable/button_back" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="35pt"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Select Ambulance"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="From : "
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/Tfrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Dhaka "
+                android:textColor="@color/colorMain"
+                android:textSize="18sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="To : "
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/Tto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Dhaka "
+                android:textColor="@color/colorMain"
+                android:textSize="18sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/colorMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ambulance_lite"
+            android:layout_marginRight="3pt"
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_width="40pt"
+            android:layout_height="42pt"
+            app:cardCornerRadius="10dp"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+
+                <ImageView
+                    android:src="@drawable/ambulance"
+                    android:layout_width="45dp"
+                    android:layout_height="36dp" />
+
+                <View
+                    android:layout_marginTop="3dp"
+                    android:layout_width="35dp"
+                    android:layout_height="1dp"
+                    android:background="#FE5237"
+                    />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000"
+                android:text="Ambulance\nlite"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ambulance_premier"
+            android:layout_marginRight="3pt"
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_width="40pt"
+            android:layout_height="42pt"
+            app:cardCornerRadius="10dp"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+
+                <ImageView
+                    android:src="@drawable/emergency_ambulance"
+                    android:layout_width="45dp"
+                    android:layout_height="36dp" />
+
+                <View
+                    android:layout_marginTop="3dp"
+                    android:layout_width="35dp"
+                    android:layout_height="1dp"
+                    android:background="#FE5237"
+                    />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000"
+                android:text="Ambulance\nPremier"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ambulance_air"
+            android:layout_marginRight="3pt"
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_width="40pt"
+            android:layout_height="42pt"
+            app:cardCornerRadius="10dp"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+
+                <ImageView
+                    android:src="@drawable/air_ambulance"
+                    android:layout_width="45dp"
+                    android:layout_height="36dp" />
+
+                <View
+                    android:layout_marginTop="3dp"
+                    android:layout_width="35dp"
+                    android:layout_height="1dp"
+                    android:background="#FE5237"
+                    />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000"
+                android:text="Air\nAmbulance"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

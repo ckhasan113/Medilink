@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/getHealthReportDetails"
+    android:layout_margin="1dp"
+    android:orientation="vertical"
+    android:background="@drawable/layout_bottom_corner"
+    >
+
+    <LinearLayout
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80pt"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/reportImage"
+                android:scaleType="fitCenter"
+                android:src="@drawable/presciption"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:layout_marginStart="2dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/reportName"
+                android:textStyle="bold"
+                android:text="Bon meru Report"
+                android:textSize="24sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/reportDoctor"
+                android:textColor="@color/colorMain"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="8dp"
+                android:text="Dr. A Khan"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/reportDate"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:text="20 May 2019"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:background="@drawable/book_appointment"
+                android:gravity="center"
+                android:layout_gravity="end"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="     Full view    "/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

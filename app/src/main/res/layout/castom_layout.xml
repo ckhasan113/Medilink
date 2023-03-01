@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:id="@+id/imageView"
+        android:src="@drawable/doctor"
+        />
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctor's appointment"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/subText"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Just chose and Connect"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#FFF"
+        />
+
+</LinearLayout>

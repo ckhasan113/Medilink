@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EmergencyDoctor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60pt"
+                android:background="@drawable/background_view_page">
+                <ImageButton
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imageButton"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/button_back_black"
+                    android:background="@null"/>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_marginTop="10pt"
+                    android:layout_marginBottom="5pt"
+                    android:layout_width="match_parent"
+                    android:layout_height="48pt"
+                    android:id="@+id/ViewPage2">
+
+                </androidx.viewpager.widget.ViewPager>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#E9E3E3">
+
+                <TableLayout
+                    android:layout_margin="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_marginBottom="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/chat_doctor"
+                            android:layout_marginRight="3pt"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_width="40pt"
+                            android:layout_height="72pt"
+                            app:cardCornerRadius="10dp"
+                            android:layout_weight="1"
+                            >
+
+                            <LinearLayout
+                                android:layout_margin="8dp"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+
+                                <ImageView
+                                    android:src="@drawable/chat"
+                                    android:layout_width="72dp"
+                                    android:layout_height="60dp" />
+
+                                <View
+                                    android:layout_marginTop="8dp"
+                                    android:layout_width="72dp"
+                                    android:layout_height="1dp"
+                                    android:background="#FE5237"
+                                    />
+
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="sans-serif"
+                                android:textColor="#000"
+                                android:text="Chat\nWith Doctor"
+                                android:textSize="24sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="bottom"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/talk_doctor"
+                            android:layout_marginRight="3pt"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_width="40pt"
+                            android:layout_height="72pt"
+                            app:cardCornerRadius="10dp"
+                            android:layout_weight="1"
+                            >
+
+                            <LinearLayout
+                                android:layout_margin="8dp"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+
+                                <ImageView
+                                    android:src="@drawable/headphones"
+                                    android:layout_width="72dp"
+                                    android:layout_height="60dp" />
+
+                                <View
+                                    android:layout_marginTop="8dp"
+                                    android:layout_width="72dp"
+                                    android:layout_height="1dp"
+                                    android:background="#FE5237"
+                                    />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="sans-serif"
+                                android:textColor="#000"
+                                android:text="Talk\nWith Doctor"
+                                android:textSize="24sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="bottom"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="#E9E3E3"
+                android:layout_width="match_parent"
+                android:layout_height="200pt">
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

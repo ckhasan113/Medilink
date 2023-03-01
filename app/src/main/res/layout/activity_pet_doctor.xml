@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.PetDoctor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="@drawable/background_view_page"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:src="@drawable/button_back" />
+
+        <TextView
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="15pt"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Pet Doctor"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18pt">
+                <TextView
+                    android:textSize="24sp"
+                    android:textColor="@color/colorMain"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="Pet via"
+                    android:layout_width="40pt"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+                <LinearLayout
+                    android:paddingLeft="8dp"
+                    android:background="@drawable/search_box"
+                    android:layout_width="40pt"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <Spinner
+                        android:entries="@array/category"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </Spinner>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="Pet Details"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/box"
+                android:layout_marginTop="4dp"
+                android:inputType="text"
+                android:lines="1"
+                android:minLines="1"
+                android:gravity="top|left"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                />
+            <TextView
+
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address of Pet"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/box"
+                android:layout_marginTop="4dp"
+                android:inputType="text"
+                android:lines="1"
+                android:minLines="1"
+                android:gravity="top|left"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                />
+            <TextView
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Number"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/box"
+                android:layout_marginTop="4dp"
+                android:inputType="number"
+                android:lines="1"
+                android:minLines="1"
+                android:gravity="top|left"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                />
+            <TextView
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health Issue Discription"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/box"
+                android:layout_marginTop="4dp"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:minLines="4"
+                android:gravity="top|left"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:maxLines="4"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                />
+
+
+            <Button
+                android:layout_marginBottom="64dp"
+                android:onClick="petDoctor"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorMain"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:background="@drawable/search_box"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

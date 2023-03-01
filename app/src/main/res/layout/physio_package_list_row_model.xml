@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/getPackageDetails"
+    android:padding="5dp"
+    >
+
+    <LinearLayout
+        android:background="@drawable/button_doctor"
+        android:id="@+id/physio_package"
+        android:layout_width="match_parent"
+        android:layout_height="60pt"
+        >
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/packageName"
+                        android:text="Hourly"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textColor="@color/colorMain"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/colorMain"
+                            android:textStyle="bold"
+                            android:layout_margin="1dp"
+                            android:text="Price : "
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textColor="@color/colorMain"
+                            android:id="@+id/price"
+                            android:textStyle="bold"
+                            android:layout_margin="1dp"
+                            android:text="100"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textColor="@color/colorMain"
+                            android:textStyle="bold"
+                            android:layout_margin="1dp"
+                            android:text=" Tk"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/time"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/colorMain"
+                        android:gravity="center"
+                        android:id="@+id/start"
+                        android:text="9.30 AM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorBlack"
+                        android:gravity="center"
+                        android:text=" to "
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/colorMain"
+                        android:gravity="center"
+                        android:id="@+id/end"
+                        android:text="9.30 PM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/book_appointment"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Get this package"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

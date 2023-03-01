@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".REgistration.Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:src="@drawable/medilink"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/addimagebtn"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="15dp"
+                android:clickable="true"
+                android:src="@drawable/add_user"
+                android:scaleType="centerCrop"/>
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:hint="First Name"
+                android:includeFontPadding="true"
+                android:inputType="textEmailAddress"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:textColor="@color/colorMain"
+                />
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:hint="Last Name"
+                android:includeFontPadding="true"
+                android:inputType="text"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:textColor="@color/colorMain"
+                />
+
+            <EditText
+                android:id="@+id/area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:hint="Area"
+                android:includeFontPadding="true"
+                android:inputType="text"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:textColor="@color/colorMain"
+                />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:hint="City"
+                android:includeFontPadding="true"
+                android:inputType="text"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:textColor="@color/colorMain"
+                />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:hint="Phone"
+                android:includeFontPadding="true"
+                android:inputType="phone"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:textColor="@color/colorMain"
+                />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:hint="Email"
+                android:includeFontPadding="true"
+                android:inputType="textEmailAddress"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:textColor="@color/colorMain"
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:textColor="@color/colorMain"
+                />
+
+            <EditText
+                android:id="@+id/rePassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/write_text_5"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:hint="Re enter password"
+                android:inputType="textPassword"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:textColor="@color/colorMain"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginBottom="64dp"
+                android:id="@+id/doctor_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="@color/colorMain"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="8dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_margin="2dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:layout_gravity="left"
+                        android:src="@drawable/register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <View
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#fff"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/rubik_bold"
+                        android:gravity="center"
+                        android:text="Sign Up"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:typeface="monospace" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

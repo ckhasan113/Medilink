@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".REgistration.LogIn">
+
+
+    <ImageView
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="100pt"
+        android:src="@drawable/medilink"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/email_log_in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/write_text_5"
+            android:fontFamily="@font/amiko_semibold"
+            android:gravity="center"
+            android:hint="Email"
+            android:includeFontPadding="true"
+            android:inputType="textEmailAddress"
+            android:padding="1dp"
+            android:singleLine="true"
+            android:textColor="@color/colorMain"
+            />
+
+        <EditText
+            android:id="@+id/password_log_in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/write_text_5"
+            android:fontFamily="@font/amiko_semibold"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="1dp"
+            android:singleLine="true"
+            android:textColor="@color/colorMain"
+            />
+
+
+        <!-- Login Button -->
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/login_master"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@color/colorMain"
+            app:cardCornerRadius="10dp"
+            app:contentPadding="8dp"
+
+            >
+
+            <LinearLayout
+                android:layout_margin="2dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_gravity="left"
+                    android:src="@drawable/login_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <View
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#fff"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/rubik_bold"
+                    android:gravity="center"
+                    android:text="LogIn"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:onClick="goregister"
+            android:id="@+id/btnLinkToRegisterScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="Not a Member? Register now."
+            android:textAllCaps="false"
+            android:textColor="@color/colorMain"
+            android:textSize="15dp"
+            android:fontFamily="@font/amiko"/>
+
+    </LinearLayout>
+
+</LinearLayout>

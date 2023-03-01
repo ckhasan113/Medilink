@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:id="@+id/getMyPharmacyOrderDetails"
+    android:background="@drawable/button_doctor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/myOrderVendorImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/v_doctor" />
+
+        <TextView
+            android:id="@+id/myOrderVendorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/myOrderVendorImage"
+            android:layout_toRightOf="@+id/myOrderVendorImage"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/myOrderStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myOrderVendorName"
+            android:layout_toRightOf="@+id/myOrderVendorImage"
+            android:gravity="center"
+            android:textColor="@color/colorSubMain"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Status" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/myOrderStatus"
+            android:layout_toEndOf="@+id/myOrderVendorImage"
+            android:background="@drawable/book_appointment"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Get Order Details"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.BloodBank">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:background="@drawable/background_view_page"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:src="@drawable/button_back" />
+
+        <TextView
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25pt"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Blood Bank"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:layout_marginRight="2pt"
+                        android:layout_weight="1"
+                        android:id="@+id/buttonAp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36pt"
+                        android:text="A+"
+                        android:textSize="30sp"
+                        android:textColor="#FFF"
+                        android:background="@drawable/custom_appoi"/>
+                    <Button
+                        android:layout_marginRight="2pt"
+                        android:layout_weight="1"
+                        android:id="@+id/buttonBp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36pt"
+                        android:text="B+"
+                        android:textSize="30sp"
+                        android:textColor="#FFF"
+                        android:background="@drawable/custom_appoi"/>
+                    <Button
+                        android:layout_marginRight="2pt"
+                        android:layout_weight="1"
+                        android:id="@+id/buttonABp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36pt"
+                        android:text="AB+"
+                        android:textSize="30sp"
+                        android:textColor="#FFF"
+                        android:background="@drawable/custom_appoi"/>
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/buttonOp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36pt"
+                        android:text="O+"
+                        android:textSize="30sp"
+                        android:textColor="#FFF"
+                        android:background="@drawable/custom_appoi"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:layout_marginRight="2pt"
+                        android:layout_weight="1"
+                        android:id="@+id/buttonAm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36pt"
+                        android:text="A-"
+                        android:textSize="30sp"
+                        android:textColor="#FFF"
+                        android:background="@drawable/custom_appoi"/>
+                    <Button
+                        android:layout_marginRight="2pt"
+                        android:layout_weight="1"
+                        android:id="@+id/buttonBm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36pt"
+                        android:text="B-"
+                        android:textSize="30sp"
+                        android:textColor="#FFF"
+                        android:background="@drawable/custom_appoi"/>
+                    <Button
+                        android:layout_marginRight="2pt"
+                        android:layout_weight="1"
+                        android:id="@+id/buttonABm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36pt"
+                        android:text="AB-"
+                        android:textSize="30sp"
+                        android:textColor="#FFF"
+                        android:background="@drawable/custom_appoi"/>
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/buttonOm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36pt"
+                        android:text="O-"
+                        android:textSize="30sp"
+                        android:textColor="#FFF"
+                        android:background="@drawable/custom_appoi"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:textSize="24sp"
+                android:text="Best Donor"
+                android:textColor="#000"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <LinearLayout
+                android:layout_marginBottom="32dp"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40pt"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_margin="2dp">
+
+                                <ImageView
+                                    android:src="@drawable/ahsan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_margin="4dp"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="6"
+                                android:orientation="vertical"
+                                >
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:gravity="bottom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:textStyle="bold"
+                                        android:text="Ahsan Habib"
+                                        android:textSize="18sp"
+                                        android:textColor="#000"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="bottom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:fontFamily="sans-serif"
+                                        android:layout_marginTop="2dp"
+                                        android:text="Dhaka"
+                                        android:textSize="14sp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="14sp"
+                                            android:text="Blood Doneted :"/>
+                                        <TextView
+                                            android:textStyle="bold"
+                                            android:textColor="#000"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="14sp"
+                                            android:text="15"/>
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40pt"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_margin="2dp">
+
+                                <ImageView
+                                    android:src="@drawable/ahsan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_margin="4dp"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="6"
+                                android:orientation="vertical"
+                                >
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:gravity="bottom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:textStyle="bold"
+                                        android:text="Ahsan Habib"
+                                        android:textSize="18sp"
+                                        android:textColor="#000"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="bottom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:fontFamily="sans-serif"
+                                        android:layout_marginTop="2dp"
+                                        android:text="Dhaka"
+                                        android:textSize="14sp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="14sp"
+                                            android:text="Blood Doneted :"/>
+                                        <TextView
+                                            android:textStyle="bold"
+                                            android:textColor="#000"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="14sp"
+                                            android:text="15"/>
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40pt"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_margin="2dp">
+
+                                <ImageView
+                                    android:src="@drawable/ahsan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_margin="4dp"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="6"
+                                android:orientation="vertical"
+                                >
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:gravity="bottom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:textStyle="bold"
+                                        android:text="Ahsan Habib"
+                                        android:textSize="18sp"
+                                        android:textColor="#000"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="bottom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:fontFamily="sans-serif"
+                                        android:layout_marginTop="2dp"
+                                        android:text="Dhaka"
+                                        android:textSize="14sp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="14sp"
+                                            android:text="Blood Doneted :"/>
+                                        <TextView
+                                            android:textStyle="bold"
+                                            android:textColor="#000"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="14sp"
+                                            android:text="15"/>
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

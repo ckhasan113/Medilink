@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="475dp"
+    android:background="@drawable/custom_appoi"
+    android:layout_gravity="center">
+    <TextView
+        android:background="@drawable/circel_background"
+        android:id="@+id/txtclose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textColor="#000"
+        android:text="X"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Date"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/write_text_4"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Time"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/write_text_4"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Dastination"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/etPlace"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/write_text_4"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/add_new_sedule"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="32pt"
+        android:layout_gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:text="Add new Scdule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_box"/>
+
+
+</LinearLayout>
